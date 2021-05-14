@@ -1,0 +1,107 @@
+body{
+    margin:0;
+    background-color: hsl(233, 47%, 7%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@media only screen and (max-width: 600px){
+    .card-container{
+        width:80%;
+        height: 80%!important;
+        margin:auto;
+        
+    }
+    .card{
+        width:100%!important;
+        height:100%!important;
+        margin-top:100px;
+    }
+    .content-container{
+        grid-template-areas: 
+        "image"
+        "text"!important;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .image{
+        width:100%!important;
+        height:27em!important;
+        border-top-left-radius: 0.35em;
+    }
+    .text{
+        display: inline-block;
+        text-align: center;
+    }
+    .stat-container{
+        grid-template-areas: 
+        "stat1"
+        "text1"
+        "stat2"
+        "text2"
+        "stat3"
+        "text3"!important;
+    }
+}
+
+.card-container{
+    justify-content: center;
+    height:59em;
+    align-items: center;
+    display:flex;
+}
+.content-container{
+    display:grid;
+    grid-template-areas: 
+    'text image';
+}
+.card{
+    width:69.5em;
+    border-radius:0.35em;
+    height:27.9em;
+    background-color: hsl(244, 38%, 16%);
+}
+.text{
+    grid-area: text;
+    color:white;
+    margin:3em 5em;
+}
+.text > h3{
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 17px;
+    color:hsla(0, 0%, 100%, 0.575);
+    line-height: 1.7em;
+    margin-bottom: 3em;
+}
+.stat-container{
+    display: grid;
+    grid-template-areas: 
+    'stat1 stat2 stat3'
+    'text1 text2 text3';
+}
+.stat-container > h2{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+}
+.stat-container > h6{
+    margin-top:10px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 100;
+    font-size:12px;
+    letter-spacing: 0.1em;
+    color:hsla(0, 0%, 100%, 0.575);
+}
+.image{
+    grid-area: image;
+    border-top-right-radius: 0.35em;
+    z-index:1;
+    border-bottom-right-radius: 0.35em;
+    background:url('images/image-header-desktop.jpg');
+    opacity: 0.8;
+    background-color:hsl(277, 69%, 61%);
+    background-blend-mode: multiply;
+    height:446px;
+    width:540px;
+}
+
