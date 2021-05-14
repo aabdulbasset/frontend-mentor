@@ -27,7 +27,7 @@ body{
         width:100%!important;
         height:480px!important;
         border-top-left-radius: 0.35em;
-        background-image:url("/images/image-header-mobile.jpg")!important;
+        background-image:url("images/image-header-mobile.jpg")!important;
     }
     .text{
         display: inline-block;
